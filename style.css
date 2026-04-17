@@ -1,6 +1,6 @@
 :root {
-  --primary: #4f46e5; 
-  --primary-hover: #4338ca;
+  --primary: #2563eb; 
+  --primary-hover: #1d4ed8;
   --bg-gradient: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
   --card-bg: rgba(255, 255, 255, 0.95);
   --text-main: #111827;
@@ -111,10 +111,7 @@ body, html {
   margin: 0 0 0.5rem 0;
   font-size: 2.25rem;
   font-weight: 800;
-  background: linear-gradient(135deg, #4f46e5 0%, #7e22ce 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--primary);
   width: fit-content;
 }
 
@@ -139,13 +136,13 @@ body, html {
 .profile-time {
   font-size: 0.875rem;
   color: var(--text-muted);
-  background: rgba(79, 70, 229, 0.08);
+  background: rgba(37, 99, 235, 0.08);
   padding: 0.6rem 1rem;
   border-radius: 0.75rem;
   display: inline-block;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-weight: 500;
-  border: 1px solid rgba(79, 70, 229, 0.15);
+  border: 1px solid rgba(37, 99, 235, 0.15);
 }
 
 .time-label {
@@ -224,7 +221,7 @@ body, html {
   color: white;
   border-color: var(--primary);
   transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
 }
 
 .profile-social {
@@ -249,13 +246,14 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
   text-decoration: none;
   color: var(--primary);
   font-weight: 600;
   padding: 0.8rem 1.75rem;
   border-radius: 1rem;
-  background: rgba(79, 70, 229, 0.08);
-  border: 1px solid rgba(79, 70, 229, 0.1);
+  background: rgba(37, 99, 235, 0.08);
+  border: 1px solid rgba(37, 99, 235, 0.1);
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -264,7 +262,7 @@ body, html {
   color: white;
   border-color: var(--primary-hover);
   transform: translateY(-4px);
-  box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.35);
+  box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.35);
   outline: none;
 }
 
