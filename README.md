@@ -19,7 +19,7 @@ Because this simple component is built without a frontend framework, no build-st
 1. **Direct Browser Execution**:
    Simply open the `index.html` file using your web browser of choice. Double click the file or drag 'n drop it onto a browser tab.
 
-2. **Using a Local Server (Recommended for e2e testing)**:
+2. **Using a Local Server**:
    If you have Python installed on your system:
    ```bash
    python -m http.server 3000
