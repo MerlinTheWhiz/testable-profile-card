@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testable Profile Card</title>
+  <meta name="description" content="A responsive, accessible user profile card component displaying user information, avatar, social links, hobbies and dislikes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <article class="profile-card" data-testid="test-profile-card">
+      <div class="profile-header">
+        <figure class="profile-avatar-container">
+          <img src="https://i.pravatar.cc/150?img=68" alt="Profile picture of Jane Doe" class="profile-avatar" data-testid="test-user-avatar">
+        </figure>
+        <div class="profile-basic-info">
+          <header>
+            <h1 class="profile-name" data-testid="test-user-name">Jane Doe</h1>
+          </header>
+          <p class="profile-bio" data-testid="test-user-bio">Frontend wizard and accessibility advocate. Passionate about creating responsive, beautiful, and accessible web experiences available to everyone.</p>
+          
+          <div class="profile-time-wrapper">
+            <span class="sr-only">Current epoch time: </span>
+            <div class="profile-time" aria-live="polite">
+              <span class="time-label" aria-hidden="true">⏱️ Epoch:</span>
+              <span data-testid="test-user-time" class="time-display">Loading...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="profile-details">
+        <section class="profile-section">
+          <h2>Hobbies</h2>
+          <ul class="profile-hobbies" data-testid="test-user-hobbies">
+            <li>Reading sci-fi novels</li>
+            <li>Coding web apps</li>
+            <li>Hiking mountains</li>
+          </ul>
+        </section>
+
+        <section class="profile-section">
+          <h2>Dislikes</h2>
+          <ul class="profile-dislikes" data-testid="test-user-dislikes">
+            <li>Cold coffee</li>
+            <li>Slow internet</li>
+            <li>Bugs in production</li>
+          </ul>
+        </section>
+
+        <nav class="profile-social" aria-label="Social media links">
+          <ul class="social-links" data-testid="test-user-social-links">
+            <li>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter" aria-label="Visit Jane Doe's Twitter profile">Twitter</a>
+            </li>
+            <li>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github" aria-label="Visit Jane Doe's GitHub profile">GitHub</a>
+            </li>
+            <li>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin" aria-label="Visit Jane Doe's LinkedIn profile">LinkedIn</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </article>
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+</html>
