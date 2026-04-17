@@ -30,6 +30,11 @@ Because this simple component is built without a frontend framework, no build-st
    ```
    Then navigate to `http://localhost:3000` or whatever port is output by the prompt.
 
+3. **Using VSCode Live Server Extension**:
+   - Open this project folder in Visual Studio Code.
+   - Install the "Live Server" extension (by Ritwick Dey) if you haven't already.
+   - Right-click `index.html` and select **"Open with Live Server"**, or click the **"Go Live"** button in the bottom right corner of VSCode.
+
 ## 🧪 Testing Notes and Hooks
 
 This component intentionally decouples test identifiers from styling mechanisms, offering highly stable testing targets.
